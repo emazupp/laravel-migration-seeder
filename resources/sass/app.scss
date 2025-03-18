@@ -1,0 +1,35 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.sidebar {
+    flex-basis: 15% !important;
+    height: 100vh !important;
+}
+
+.content-wrapper {
+    flex-basis: 85% !important;
+    height: 100vh !important;
+    overflow-y: scroll;
+    padding: 0px 10px;
+}

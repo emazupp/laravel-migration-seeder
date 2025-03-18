@@ -19,9 +19,11 @@ return new class extends Migration
             $table->dateTime("departure_time");
             $table->dateTime("arrive_time");
             $table->integer("carriage_total");
+            $table->boolean("on_time")->default(true);
+            $table->boolean("is_cancelled")->default(false);
+            $table->decimal('price', total: 6, places: 2);
 
-            $table->boolean("on_time");
-            $table->boolean("is_cancelled");
+            $table->timestamps();
         });
     }
 
